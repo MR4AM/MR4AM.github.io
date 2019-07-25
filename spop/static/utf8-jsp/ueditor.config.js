@@ -19,9 +19,6 @@
      * 因此，UEditor提供了针对不同页面的编辑器可单独配置的根路径，具体来说，在需要实例化编辑器的页面最顶部写上如下代码即可。当然，需要令此处的URL等于对应的配置。
      * window.UEDITOR_HOME_URL = "/xxxx/xxxx/";
      */
-    // window.UEDITOR_HOME_URL = "/static/ue/"
-    window.UEDITOR_HOME_URL = "/spop/static/ue/"
-
     var URL = window.UEDITOR_HOME_URL || getUEBasePath();
 
     /**
@@ -81,7 +78,7 @@
 
         //,autoClearinitialContent:true //是否自动清除编辑器初始内容，注意：如果focus属性设置为true,这个也为真，那么编辑器一上来就会触发导致初始化的内容看不到了
 
-        // ,focus:false //初始化时，是否让编辑器获得焦点true或false
+        //,focus:false //初始化时，是否让编辑器获得焦点true或false
 
         //如果自定义，最好给p标签如下的行高，要不输入中文时，会有跳动感
         //,initialStyle:'p{line-height:1em}'//编辑器层级的基数,可以用来改变字体等
@@ -90,7 +87,7 @@
 
         //indentValue
         //首行缩进距离,默认是2em
-        ,indentValue:'2em'
+        //,indentValue:'2em'
 
         //,initialFrameWidth:1000  //初始化编辑器宽度,默认1000
         //,initialFrameHeight:320  //初始化编辑器高度,默认320
@@ -250,10 +247,10 @@
 
         //elementPathEnabled
         //是否启用元素路径，默认是显示
-        ,elementPathEnabled : false
+        //,elementPathEnabled : true
 
         //wordCount
-        ,wordCount:false         //是否开启字数统计
+        //,wordCount:true          //是否开启字数统计
         //,maximumWords:10000       //允许的最大字符数
         //字数统计提示，{#count}代表当前字数，{#leave}代表还可以输入多少字符数,留空支持多语言自动切换，否则按此配置显示
         //,wordCountMsg:''   //当前已输入 {#count} 个字符，您还可以输入{#leave} 个字符
